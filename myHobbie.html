@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbie</title>
+    <style>
+        body {
+            background-color: #c4c1e0;
+        }
+        .theme {
+        font-size: 10px;
+        background: #393e46;
+        color: white;
+        padding: 5 8px;
+      }
+      .theme:hover {
+        color: #393e46;
+        background: white;
+      }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid black;
+            background: #e0ffcd;
+            font-size: 20px;
+            border-radius: 6px;
+            padding: 10px 15px;
+            transition: all 150ms ease-in-out;
+
+        }
+        button:hover {
+            background:  #ffcab0;
+            cursor: pointer;
+        }
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+        h2 {
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 700px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer {
+           text-align: center;
+           margin: 10px 0;
+           font-size: 18px;
+        }
+        .crochetKit {
+           border-radius: 10px;
+        transition: all 150ms ease-in-out; 
+        }
+        .crochetKit:hover {
+            filter: contrast(80%);
+            transform: scale(1.1);
+        }
+        .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(2);
+      }
+      .dark {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        color: white;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .dark a {
+        color: plum;
+      }
+      
+    </style>
+</head>
+<body>
+    <button class="theme">Dark Theme</button>
+    <div class="container">
+    <header>
+    <h1>Crocheting</h1>
+    <h2>My favourite hobby</h2>
+    </header>
+    
+    <a href="https://www.lionbrand.com/pages/how-to-crochet#:~:text=Terms%20and%20Abbreviations-,What%20is%20Crochet%3F,crochet%20uses%20a%20single%20hook." target="_blank">
+        <img src="https://m.media-amazon.com/images/I/91PVyPdFYdL._AC_UF350,350_QL80_.jpg" alt="" class="crochetKit">
+    </a>
+    <div class="grid">
+        <img src="https://thecrocheting.com/cdn/shop/products/ACS_1909.jpg?v=1678039418&width=1946" alt="" width="330px">
+        <img src="https://i.etsystatic.com/6683704/r/il/6ce96c/2507858184/il_340x270.2507858184_pong.jpg" alt="">
+        <img src="https://www.consciouslifestylecollective.com/wp-content/uploads/2024/01/20231112_150831-01-scaled-e1706633196172.jpeg"
+        alt="" width="330px">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmDrjOvi7y-11PMZWJzQgDmJVS2GpX31RrjA&s" alt="" width="600px">
+    </div>
+    
+    <p>I love the gentle, repetetive motions of crocheting. It is calming
+       and mediddative, providing sense of relaxation and stress relief. 
+       Crocheting allows me to express my self, and to bring unique ideas to life, 
+       giving me a sense of pride and accomplishment with each project I do.
+    </p>
+    <a href="https://www.lionbrand.com/pages/how-to-crochet#:~:text=Terms%20and%20Abbreviations-,What%20is%20Crochet%3F,crochet%20uses%20a%20single%20hook." target="_blank">
+       <b>Learn how to crochet</b>
+    </a><br><br>
+    
+    <button>Learn More</button><br><br>
+    </div>
+    
+    <footer>
+        Coded by <strong><a href="" target="_blank">Ambesiwe Gantsho</a></strong>
+    </footer>
+   <script>
+        function changeTheme() {
+                let body = document.querySelector("body");
+                body.classList.toggle("dark");
+            }
+        let theme = document.querySelector(".theme");
+        theme.addEventListener("click", changeTheme);
+        
+   </script>
+</body>
+</html>
